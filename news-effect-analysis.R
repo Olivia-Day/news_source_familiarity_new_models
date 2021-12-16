@@ -24,7 +24,8 @@ range(survey2$age)
 survey2$age_category <- cut(survey2$age, breaks = c(17, 30, 41, 74, 92))
 
 # -------1.2 convert ethnicity columns to a categorical variable----------
-# we have 4 columns recording ethnicity
+# data sets have 4 columns recording ethnicity
+# convert them into a categorical variable called ethnicity
 
 survey1$ethnicity <- ifelse(survey1$black == 1, 'black',
                             ifelse(survey1$hispanic.binary == 1, 'hispanic.binary',
